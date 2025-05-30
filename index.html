@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Trà Giang thổi bánh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <!-- Nút bắt đầu -->
+  <div id="s"  style="position: fixed; z-index: 10000; top: 0; left: 0; right: 0; bottom: 0; background: palevioletred; display: flex; align-items: center; justify-content: center;">
+    <button style="padding: 8px; border-radius: 20spx; outline: none;" id="start-btn">🎂 Bắt đầu bữa tiệc 🎉</button>
+  </div>
+
+  <!-- Bọc phần chính để ẩn ban đầu -->
+  <div id="main-content" class="hidden">
+    <div class="birthday-card hidden">
+      <canvas id="fireworks"></canvas>
+      <div class="greeting-card">
+        <h2>🎉 Chúc mừng sinh nhật Trà Giang 🎉</h2>
+        <p>Chúc chị một tuổi mới ngập tràn hạnh phúc, <br>
+          yêu thương và những điều tuyệt vời nhất!</p>
+        <p style="margin-top: 20px;">💖 by Petd 💖</p>
+      </div>
+    </div>
+
+    <div class="candle-count-display">
+      <div>Trà Giang ơi !!!</div>
+      Ấn vào bánh để cắm nến: <span id="candleCount">0</span>
+    </div>
+
+    <div class="cake">
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="icing"></div>
+      <div class="drip drip1"></div>
+      <div class="drip drip2"></div>
+      <div class="drip drip3"></div>
+    </div>
+  </div>
+  <audio id="bg-music" src="./n.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
