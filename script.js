@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Phát nhạc nền
       const music = document.getElementById("bg-music");
+      music.volume = 1.0; 
       music.play().catch(err => console.log("Autoplay failed:", err));
 });
 
